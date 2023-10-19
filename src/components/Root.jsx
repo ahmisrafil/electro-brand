@@ -1,10 +1,11 @@
-import Home from "../pages/Home";
+
+import Navbar from "./Navbar";
 
 
 const Root = () => {
     return (
         <div>
-            <Home></Home>
+            <Navbar></Navbar>
         </div>
     );
 };
