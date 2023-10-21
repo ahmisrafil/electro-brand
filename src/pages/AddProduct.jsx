@@ -5,6 +5,7 @@ const AddProduct = () => {
         <div className="hero min-h-screen bg-base-300">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="card flex-shrink-0 w-full max-w-xl shadow-2xl bg-base-100">
+                    <h3 className="text-center font-bold text-3xl mt-8">Add Products</h3>
                 <form className="card-body">
                     <div className="flex flex-col md:flex-row gap-8">
                         <div className="form-control">

@@ -36,7 +36,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="navbar bg-[#928b8b]  px-10">
+        <div className="navbar bg-[#060d5e]  px-10">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -49,7 +49,7 @@ const Navbar = () => {
                 <div className="flex gap-4">
                 <img className="h-9" src="https://i.ibb.co/bJS031m/electro-logo.png" alt="electro-logo" />
                     <div className="">
-                       <h3 className="text-3xl font-bold">ELEC<span className=" text-sky-600">TRO</span></h3>
+                       <h3 className="text-3xl text-white font-bold">ELEC<span className=" text-sky-600">TRO</span></h3>
                     </div>
                 </div>
             </div>
