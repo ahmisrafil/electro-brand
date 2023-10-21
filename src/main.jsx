@@ -14,6 +14,7 @@ import AuthProvider from './components/AuthProvider/AuthProvider';
 import AddProduct from './pages/AddProduct';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Cart from './pages/Cart';
+import Brand from './pages/Brand';
 
 
 const router = createBrowserRouter([
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element : <PrivateRoute><Cart></Cart></PrivateRoute>
+      },
+      {
+        path: "/brands/:brandName",
+        element: <Brand></Brand>
       }
     ]
   },
