@@ -17,20 +17,24 @@ const Navbar = () => {
 
 
     const navLinks = <>
-        <li className="lg:text-white lg:text-xl lg:font-sans  lg:mx-2"> 
-        <NavLink to='/'>Home</NavLink>
+        <li className="lg:text-white lg:text-xl lg:font-sans  lg:mx-2">
+            <NavLink to='/'>Home</NavLink>
         </li>
-        <li className="lg:text-white lg:text-xl lg:font-sans  lg:mx-2"> 
-        <NavLink to='/addproduct'>Add Product</NavLink>
+        <li className="lg:text-white lg:text-xl lg:font-sans  lg:mx-2">
+            <NavLink to='/addproduct'>Add Product</NavLink>
         </li>
-        <li className="lg:text-white lg:text-xl lg:font-sans  lg:mx-2"> 
-        <NavLink to='/cart'>My Cart</NavLink>
+        <li className="lg:text-white lg:text-xl lg:font-sans  lg:mx-2">
+            <NavLink to='/cart'>My Cart</NavLink>
         </li>
-        <li className="lg:text-white lg:text-xl lg:font-sans  lg:mx-2"> 
-        <NavLink to='/login'>Login</NavLink>
-        </li>
-        
-        
+        {
+            !user && <>
+            <li className="lg:text-white lg:text-xl lg:font-sans  lg:mx-2">
+                <NavLink to='/login'>Login</NavLink>
+            </li>
+            </>
+        }
+
+
     </>
 
 
@@ -47,9 +51,9 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="flex gap-4">
-                <img className="h-9" src="https://i.ibb.co/bJS031m/electro-logo.png" alt="electro-logo" />
+                    <img className="h-9" src="https://i.ibb.co/bJS031m/electro-logo.png" alt="electro-logo" />
                     <div className="">
-                       <h3 className="text-3xl text-white font-bold">ELEC<span className=" text-sky-600">TRO</span></h3>
+                        <h3 className="text-3xl text-white font-bold">ELEC<span className=" text-sky-600">TRO</span></h3>
                     </div>
                 </div>
             </div>
@@ -62,7 +66,7 @@ const Navbar = () => {
                 {
                     user && <>
                         <div className="text-white flex flex-row gap-2 items-center">
-                        <img className="h-[40px] w-[40px] rounded-full " src={user.photoURL} alt="" />
+                            <img className="h-[40px] w-[40px] rounded-full " src={user.photoURL} alt="" />
                             <div>
                                 <p>{user.displayName}</p>
                                 <span className="text-xs mr-2">{user.email}</span>

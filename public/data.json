@@ -1,0 +1,27 @@
+[
+    {
+      "brandName": "Samsung",
+      "image": "https://i.ibb.co/PcfcqBh/samsung-brand.jpg"
+    },
+    {
+      "brandName": "Apple",
+      "image": "https://i.ibb.co/ngXdpt4/apple.jpg"
+    },
+    {
+      "brandName": "Microsoft",
+      "image": "https://i.ibb.co/8gZJqZV/Microsoft-Logo-Design.jpg"
+    },
+    {
+      "brandName": "Xiaomi",
+      "image": "https://i.ibb.co/h9Gqtwh/xiaomi.jpg"
+    },
+    {
+      "brandName": "Intel",
+      "image": "https://i.ibb.co/B4y5nt5/intel.jpg"
+    },
+    {
+      "brandName": "Sony",
+      "image": "https://i.ibb.co/phyrzCJ/TV-Sony.webp"
+    }
+
+  ]

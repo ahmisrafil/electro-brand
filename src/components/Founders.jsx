@@ -7,7 +7,7 @@ const Founders = () => {
             data-aos-easing="linear"
             data-aos-duration="1500">
             <div className="my-10" style={{ backgroundImage: 'url(https://i.ibb.co/S5qcc8x/Untitled-design.png)' }}>
-                <div className="hero-overlay bg-opacity-90 pb-20">
+                <div className="hero-overlay bg-opacity-60 pb-20">
                     <div className="py-10 text-center text-neutral-content">
                         {/* headings and texts */}
                         <div className="mx-0" data-aos="flip-up">
