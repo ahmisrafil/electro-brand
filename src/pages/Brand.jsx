@@ -4,7 +4,6 @@ import ProductCard from "../components/ProductCard";
 
 const Brand = () => {
     const { brandName } = useParams();
-    console.log(brandName);
     const slider = [
         {
             "id": 1,
@@ -52,7 +51,6 @@ const Brand = () => {
     ]
 
     const products = useLoaderData();
-    console.log(products);
     return (<>
         <div>
             {

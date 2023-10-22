@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
 
 
 const ProductCard = ({ product }) => {
     const { brand, description, image, name, price, rating, type } = product;
-    console.log(brand, description, image, name, price, rating, type);
+    
+    
     return (
-        <div className="card card-compact lg:w-[35vw] mx-5 md:mx-10  bg-stone-200 shadow-xl ">
+            <div className="card card-compact lg:w-[35vw] mx-5 md:mx-10  bg-stone-200 shadow-xl ">
             <figure><img src={image} className="lg:w-[100%] lg:h-[40vh]" alt="card-image" /></figure>
             <div className="card-body">
                 <h2 className="card card-title">Model: {name}</h2>
@@ -19,11 +21,13 @@ const ProductCard = ({ product }) => {
 
                 <p><span className="font-semibold">Description:</span>{description}</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <Link to={`/${name}`}><button className="btn btn-primary bg-[#060d5e]">Details</button></Link>
+                    <Link to="/update"><button className="btn btn-primary bg-[#060d5e]">Update</button></Link>
+                    
                 </div>
             </div>
         </div>
-    );
+        );
 };
 
 export default ProductCard;
