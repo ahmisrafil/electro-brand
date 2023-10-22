@@ -4,8 +4,7 @@ import Founders from "../components/Founders";
 
 const Home = () => {
     const brands = useLoaderData();
-    console.log(brands);
-    
+
 
     return (
         <div>
