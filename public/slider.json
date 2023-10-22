@@ -1,0 +1,39 @@
+[
+    {
+      "brandName": "Samsung",
+      "image1": "https://graphicsfamily.com/wp-content/uploads/edd/2021/07/Samsung-Galaxy-Social-Media-Banner-Design-1536x864.jpg",
+      "image2": "https://i.ibb.co/M1SpqTF/samsung-baneer.jpg",
+      "image3": "https://www.singgalangnews.com/foto_berita/41Galaxy%20Land%20Banner.jpg"
+    },
+    {
+      "brandName": "Apple",
+      "image1": "https://i.ytimg.com/vi/KpI-QDbrf0Y/maxresdefault.jpg",
+      "image2": "https://i.ytimg.com/vi/OXi6C0bNIhE/maxresdefault.jpg",
+      "image3": "hhttps://i.ibb.co/hckmTTy/iphone.webp"
+    },
+    {
+      "brandName": "Microsoft",
+      "image1": "https://i.ibb.co/yph96mX/zy-Vb-Uadgd-CMF66-Lu-N3c-Mge.jpg",
+      "image2": "https://sm.pcmag.com/t/pcmag_uk/news/m/microsoft-/microsoft-accused-of-copying-xbox-one-pubg-ad-concept_vd24.1920.jpg",
+      "image3": "https://i.ytimg.com/vi/NqPeeO-7yT4/maxresdefault.jpg"
+    },
+    {
+      "brandName": "Xiaomi",
+      "image1": "https://fdn.gsmarena.com/imgroot/news/21/07/xiaomi-mi-11-ultra-reg-india/-1200/gsmarena_002.jpg",
+      "image2": "https://ecdn.dhakatribune.net/contents/cache/images/1200x630x1xxxxx1/uploads/dten/2022/02/15/redmi-10-2022.jpeg",
+      "image3": "https://www.mansworldindia.com/wp-content/uploads/2022/04/IMG_4931.jpg"
+    },
+    {
+      "brandName": "Intel",
+      "image1": "https://miro.medium.com/v2/resize:fit:2000/1*44vZedOoOcczFNo34Xvugw.jpeg",
+      "image2": "https://www.dignited.com/wp-content/uploads/2022/09/Intel-Laptop-CPU-_6-1024x576.png",
+      "image3": "https://www.selectyourdeals.com/wp-content/uploads/2019/09/intel-processor-list.jpg"
+    },
+    {
+      "brandName": "Sony",
+      "image1": "https://i.ytimg.com/vi/4vTWf0LYoDM/maxresdefault.jpg",
+      "image2": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/d433f752369947.590f8f064f9ce.jpg",
+      "image3": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/fb439443288877.57ea2d9a6fd48.jpg"
+    }
+    
+  ]
