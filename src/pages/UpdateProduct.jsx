@@ -2,22 +2,18 @@ import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 
 
-const AddProduct = () => {
-    const [selectedType, setType] = useState('');
-    const brands = useLoaderData();
+const UpdateProduct = () => {
+    const product = useLoaderData();
+    console.log(product);
 
-    const brandList = <>
-    {
-        brands.map(brand=><option key={brand._id}>{brand.brandName}</option>)
-    }
-    </>
+    const [selectedType, setType] = useState('');
+
 
     const handleSelect=(e)=>{
         setType(e.target.value)
         
     }
-console.log(selectedType);
-    const handleAdd = (e) =>{
+    const handleUpdate = (e) =>{
         e.preventDefault();
         const form = e.target;
         const name = form.name.value;
@@ -27,31 +23,18 @@ console.log(selectedType);
         const price = form.price.value;
         const rating = form.rating.value;
         const description = form.description.value;
-        const product = {name, image, brand, type, price, rating, description}
-        console.log(product);
-        form.reset();
-        fetch('http://localhost:5000/product', {
-            method: "POST",
-            headers:{
-                'content-type' : 'application/json'
-            },
-            body: JSON.stringify(product)
-        })
-        .then(res=>res.json())
-        .then(data=>{
-            console.log(data);
-        })
+        const newProduct = {name, image, brand, type, price, rating, description}
+        console.log(newProduct);
     }
 
 
 
-
     return (
-        <div className="hero min-h-screen bg-base-300">
+           <div className="hero min-h-screen bg-base-300">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="card flex-shrink-0 w-full max-w-xl shadow-2xl bg-base-100">
-                    <h3 className="text-center font-bold text-3xl mt-8">Add Product</h3>
-                <form className="card-body" onSubmit={handleAdd}>
+                    <h3 className="text-center font-bold text-3xl mt-8">Update Product</h3>
+                <form className="card-body" onSubmit={handleUpdate}>
                     <div className="flex flex-col md:flex-row gap-8">
                         <div className="form-control">
                             <label className="label">
@@ -79,7 +62,12 @@ console.log(selectedType);
                             </label>
                             <select className="select select-info w-[100%] " name="brand" value={selectedType} onChange={handleSelect}>
                                 {/* <option disabled selected>Select Product type</option> */}
-                                {brandList}
+                                <option>Samsung</option>
+                                <option>Apple</option>
+                                <option>Microsoft</option>
+                                <option>Xiaomi</option>
+                                <option>Intel</option>
+                                <option>Sony</option>
                             </select>
                         </div>
                     </div>
@@ -109,8 +97,8 @@ console.log(selectedType);
                 </form>
                 </div>
             </div>
-        </div>
+        </div> 
     );
 };
 
-export default AddProduct;
+export default UpdateProduct;

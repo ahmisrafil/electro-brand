@@ -1,18 +1,17 @@
+/* eslint-disable react/prop-types */
 import { useContext } from "react";
 import { AuthContext } from "./AuthProvider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 const DetailsCard = ({ item }) => {
-    const { brand, description, image, name, price, rating, type } = item;
+    const {brand,  description, image, name, price, rating, type } = item;
     const {user} = useContext(AuthContext);
     const {email} = user;
-    console.log(email);
     const product = {email, brand, description, image, name, price, rating, type }
 
         const handleClick =()=>{
             console.log('product added to cart');
-            console.log(product);
 
             fetch('http://localhost:5000/cart', {
                 method: "POST",

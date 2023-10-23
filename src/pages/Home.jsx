@@ -16,14 +16,14 @@ const Home = () => {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3  mx-auto gap-6 ">
                     {
-                        brands.map(brand => <>
-                            <Link to={`/brands/${brand.brandName}`}>
+                        brands.map(brand =>
+                            <Link key={brand.id} to={`/brands/${brand.brandName}`}>
                                 <div className="flex flex-col w-[80vw] md:w-[40vw] md:h-[40vh] lg:w-[28vw]">
                                     <img className="w-[80vw] md:w-[40vw] md:h-[40vh] lg:w-[28vw] rounded-md" src={brand.image} alt="" />
                                     <p className="text-2xl font-semibold text-white mt-6 ml-4 absolute">{brand.brandName}</p>
                                 </div>
                             </Link>
-                        </>)
+                        )
                     }
                 </div>
             </div>

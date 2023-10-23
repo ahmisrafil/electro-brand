@@ -2,11 +2,15 @@ import { useNavigate, useRouteError } from "react-router-dom";
 import { BsFillXCircleFill } from "react-icons/bs";
 
 const ErrorPage = () => {
+
     const error = useRouteError();
+    console.log(error);
     const goHome = useNavigate();
-    const handleHome = () =>{
-        goHome('/');
+
+    const handleHome = () => {
+        goHome(`/`);
     }
+
     return (
         <div className="text-center my-10 rounded-lg shadow-lg w-3/5 mx-auto">
             <h2 className="text-4xl font-semibold text-red-600 mt-10 mb-10">Oops!!! </h2>

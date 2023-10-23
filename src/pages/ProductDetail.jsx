@@ -10,7 +10,7 @@ const ProductDetail = () => {
     })
     return (
         <div>
-            <DetailsCard item={product}></DetailsCard>)
+            <DetailsCard item={product}></DetailsCard>
         </div>
     );
 };

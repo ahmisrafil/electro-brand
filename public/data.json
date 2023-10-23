@@ -1,25 +1,31 @@
 [
     {
+      "id" : 1,
       "brandName": "Samsung",
       "image": "https://i.ibb.co/PcfcqBh/samsung-brand.jpg"
     },
     {
+      "id" : 2,
       "brandName": "Apple",
       "image": "https://i.ibb.co/ngXdpt4/apple.jpg"
     },
     {
+      "id" : 3,
       "brandName": "Microsoft",
       "image": "https://i.ibb.co/8gZJqZV/Microsoft-Logo-Design.jpg"
     },
     {
+      "id" : 4,
       "brandName": "Xiaomi",
       "image": "https://i.ibb.co/h9Gqtwh/xiaomi.jpg"
     },
     {
+      "id" : 5,
       "brandName": "Intel",
       "image": "https://i.ibb.co/B4y5nt5/intel.jpg"
     },
     {
+      "id" : 6,
       "brandName": "Sony",
       "image": "https://i.ibb.co/phyrzCJ/TV-Sony.webp"
     }
