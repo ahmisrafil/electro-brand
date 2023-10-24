@@ -46,22 +46,22 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <PrivateRoute><Cart></Cart></PrivateRoute>,
-        loader: ()=>fetch('http://localhost:5000/cart')
+        loader: ()=>fetch('https://electro-brand-server-55la6v9on-ahm-israfils-projects.vercel.app/cart')
       },
       {
         path: "/brands/:brandName",
         element: <Brand></Brand>,
-        loader: () => fetch('http://localhost:5000/product')
+        loader: () => fetch('https://electro-brand-server-55la6v9on-ahm-israfils-projects.vercel.app/product')
       },
       {
-        path: "/:name",
+        path: "/product/:name",
         element: <PrivateRoute><ProductDetail></ProductDetail></PrivateRoute>,
-        loader: () => fetch('http://localhost:5000/product')
+        loader: () => fetch('https://electro-brand-server-55la6v9on-ahm-israfils-projects.vercel.app/product')
       },
       {
         path: "/update/:id",
         element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
+        loader: ({params}) => fetch(`https://electro-brand-server-55la6v9on-ahm-israfils-projects.vercel.app/product/${params.id}`)
       }
     ]
   },

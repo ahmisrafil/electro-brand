@@ -1,9 +1,10 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
-
+import { BsFillXCircleFill } from "react-icons/bs";
 
 const Brand = () => {
     const { brandName } = useParams();
+
     const slider = [
         {
             "id": 1,
@@ -51,6 +52,11 @@ const Brand = () => {
     ]
 
     const products = useLoaderData();
+    const product = products.filter(items => {
+        return items.brand === brandName;
+    })
+
+
     return (<>
         <div>
             {
@@ -82,12 +88,27 @@ const Brand = () => {
                 )}
         </div>
         <h3 className="text-center font-sans font-semibold text-4xl mt-20 mb-10">Available Products</h3>
-        <div className="flex flex-col gap-8 justify-center  mx-auto lg:grid lg:grid-cols-2 lg:mx-10 ">
 
-            {
-                products?.map(product => product.brand == brandName && <ProductCard key={product._id} product={product}></ProductCard>)
-            }
-        </div>
+
+        {
+            product.length > 0 ?
+                <div className="flex flex-col gap-8 justify-center  mx-auto lg:grid lg:grid-cols-2 lg:mx-10 mb-20">
+
+                    {
+                        product?.map(prod => <ProductCard key={product._id} product={prod}></ProductCard>)
+                    }
+                </div>
+                :
+                <div>
+                    <div className="text-center my-10 rounded-lg shadow-lg w-3/5 mx-auto pb-10">
+                        <h2 className="text-4xl font-semibold text-red-600 mt-10 mb-10">Oops!!! </h2>
+
+                        <BsFillXCircleFill className="text-center mx-auto my-4 text-orange-600 text-6xl"></BsFillXCircleFill>
+
+                        <p className="my-4 text-lg font-semibold mb-20"><i>No product found ...!!</i></p>
+                    </div>
+                </div>
+        }
     </>
     );
 };

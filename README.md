@@ -1,3 +1,3 @@
-# Electro Tech & Electronics Brand
+# Electro: Tech & Electronics Brand
 
 

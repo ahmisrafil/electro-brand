@@ -30,7 +30,7 @@ console.log(selectedType);
         const product = {name, image, brand, type, price, rating, description}
         console.log(product);
         form.reset();
-        fetch('http://localhost:5000/product', {
+        fetch('https://electro-brand-server-55la6v9on-ahm-israfils-projects.vercel.app/product', {
             method: "POST",
             headers:{
                 'content-type' : 'application/json'

@@ -13,7 +13,7 @@ const DetailsCard = ({ item }) => {
         const handleClick =()=>{
             console.log('product added to cart');
 
-            fetch('http://localhost:5000/cart', {
+            fetch('https://electro-brand-server-55la6v9on-ahm-israfils-projects.vercel.app/cart', {
                 method: "POST",
                 headers: {
                     'content-type' : 'application/json'
@@ -38,8 +38,8 @@ const DetailsCard = ({ item }) => {
         }
     return (
     <>
-        <div className="card card-compact  mx-5 md:mx-10  mt-10 bg-base-200 shadow-xl ">
-            <figure><img src={image} className="lg:w-[100%] lg:h-[100%] rounded-lg" alt="card-image" /></figure>
+        <div className="card card-compact  mx-5  md:mx-10  mt-10 bg-base-200 shadow-xl ">
+            <figure><img src={image} className=" lg:h-1/5 rounded-lg" alt="card-image" /></figure>
             <div className="card-body">
                 <h2 className="card card-title  bg-[#060d5e] text-white ">Model: {name}</h2>
                 <div className="flex flex-row justify-around">

@@ -20,7 +20,7 @@ const CartDetails = ({ cart }) => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/cart/${_id}`, {
+                fetch(`https://electro-brand-server-55la6v9on-ahm-israfils-projects.vercel.app/cart/${_id}`, {
                     method: "DELETE"
                 })
                     .then(res => res.json())

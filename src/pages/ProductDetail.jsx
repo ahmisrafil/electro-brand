@@ -9,7 +9,7 @@ const ProductDetail = () => {
         return items.name === name;
     })
     return (
-        <div>
+        <div className="mb-20">
             <DetailsCard item={product}></DetailsCard>
         </div>
     );
