@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "./AuthProvider/AuthProvider";
+import Darkmode from "./Darkmode";
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -61,6 +62,9 @@ const Navbar = () => {
                 <ul className="menu menu-horizontal  px-1">
                     {navLinks}
                 </ul>
+            </div>
+            <div>
+                <Darkmode></Darkmode>
             </div>
             <div className="navbar-end flex flex-col justify-end md:flex-row">
                 {

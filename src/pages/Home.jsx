@@ -13,7 +13,7 @@ const Home = () => {
 
             {/* brand collection */}
             <div className="flex flex-col justify-center items-center mx-auto">
-                <h3 className="text-center font-sans font-semibold text-4xl mt-20 mb-10">Available Brands</h3>
+                <h3 className="text-center font-sans font-semibold text-4xl mt-20 mb-10 dark:text-sky-300">Available Brands</h3>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3  mx-auto gap-6 ">
                     {

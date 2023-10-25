@@ -2,7 +2,7 @@
 
 const ContactUs = () => {
     return (
-        <div className="my-20 text-center bg-gradient-to-r from-[#212b9b] to-[#790be7]">
+        <div className="my-20 text-center bg-gradient-to-r from-[#212b9b] to-[#790be7] dark:bg-gradient-to-l ">
             <h3 className="text-4xl font-semibold my-10 text-center text-white pt-10">GET IN TOUCH </h3>
             <div className="flex flex-col justify-center lg:flex-row gap-10 ">
                 <div>
